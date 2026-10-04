@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="760" viewBox="0 0 1300 760"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#56646f"/></marker></defs><rect width="100%" height="100%" fill="white"/><style>text{font-family:Arial,sans-serif;fill:#243643} .title{font-size:24px;font-weight:bold} .label{font-size:14px} .node{font-size:16px}</style><text x="30" y="36" class="title">Оплата и сверка — to-be</text>
+<rect x="30" y="180" width="230" height="110" rx="0" fill="#e8edf2" stroke="#42566a" stroke-width="1.5"/>
+<text x="145" y="240" text-anchor="middle" class="node"><tspan x="145" dy="0">Пациент / кассир</tspan></text>
+<rect x="460" y="180" width="280" height="130" rx="8" fill="#edf4fa" stroke="#3f6a87" stroke-width="1.5"/>
+<text x="600" y="228" text-anchor="middle" class="node"><tspan x="600" dy="0">Billing gateway:</tspan><tspan x="600" dy="22">уникальный payment ID,</tspan><tspan x="600" dy="22">проверка callback</tspan></text>
+<rect x="970" y="180" width="280" height="130" rx="8" fill="#f3f1e9" stroke="#756842" stroke-width="1.5"/>
+<path d="M970 195 Q1110 215 1250 195" fill="none" stroke="#756842"/>
+<text x="1110" y="228" text-anchor="middle" class="node"><tspan x="1110" dy="0">Счета / платежи</tspan><tspan x="1110" dy="22">[FINANCIAL + PII]</tspan><tspan x="1110" dy="22">без PAN/CVV</tspan></text>
+<rect x="30" y="520" width="230" height="110" rx="0" fill="#e8edf2" stroke="#42566a" stroke-width="1.5"/>
+<text x="145" y="580" text-anchor="middle" class="node"><tspan x="145" dy="0">Бухгалтер</tspan></text>
+<rect x="460" y="520" width="280" height="130" rx="8" fill="#edf4fa" stroke="#3f6a87" stroke-width="1.5"/>
+<text x="600" y="568" text-anchor="middle" class="node"><tspan x="600" dy="0">Адаптер 1С:</tspan><tspan x="600" dy="22">идемпотентная сверка</tspan><tspan x="600" dy="22">ID / суммы / статуса</tspan></text>
+<rect x="970" y="520" width="280" height="130" rx="8" fill="#f3f1e9" stroke="#756842" stroke-width="1.5"/>
+<path d="M970 535 Q1110 555 1250 535" fill="none" stroke="#756842"/>
+<text x="1110" y="568" text-anchor="middle" class="node"><tspan x="1110" dy="0">ККМ / провайдер оплаты</tspan><tspan x="1110" dy="22">учётный статус в 1С</tspan><tspan x="1110" dy="22">защищённый адаптер</tspan></text>
+<polyline points="260,235 460,245" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="280.4" y="177" width="139.2" height="40" fill="white"/><text x="350" y="192" text-anchor="middle" class="label"><tspan x="350" dy="0">Счёт, сумма</tspan><tspan x="350" dy="18">TLS / минимизация</tspan></text>
+<polyline points="740,245 970,245" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="776.6" y="180" width="146.79999999999998" height="40" fill="white"/><text x="850" y="195" text-anchor="middle" class="label"><tspan x="850" dy="0">Статус оплаты</tspan><tspan x="850" dy="18">Аудит / шифрование</tspan></text>
+<polyline points="740,290 850,290 850,550 970,550" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="772.8" y="360" width="154.4" height="40" fill="white"/><text x="850" y="375" text-anchor="middle" class="label"><tspan x="850" dy="0">Фискальная операция</tspan><tspan x="850" dy="18">Теги / purpose</tspan></text>
+<polyline points="260,575 460,585" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="295.6" y="520" width="108.8" height="40" fill="white"/><text x="350" y="535" text-anchor="middle" class="label"><tspan x="350" dy="0">Запрос сверки</tspan><tspan x="350" dy="18">Роль + цель</tspan></text>
+<polyline points="1090,310 1090,440 680,440 680,520" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="928" y="405" width="124" height="22" fill="white"/><text x="990" y="420" text-anchor="middle" class="label"><tspan x="990" dy="0">Счета и статусы</tspan></text>
+<polyline points="970,600 740,600" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="772.8" y="593" width="154.4" height="22" fill="white"/><text x="850" y="608" text-anchor="middle" class="label"><tspan x="850" dy="0">Чек / подтверждение</tspan></text>
+<polyline points="500,650 500,690 150,690 150,630" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="262.8" y="663" width="154.4" height="22" fill="white"/><text x="340" y="678" text-anchor="middle" class="label"><tspan x="340" dy="0">Сверка без диагноза</tspan></text>
+<text x="30" y="730" class="label">Теги наследуются от источника; неизвестная цель или право → отказ. Политики подробнее в Task3.</text>
+</svg>
