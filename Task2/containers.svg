@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1940" height="1480" viewBox="0 0 1940 1480"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#56646f"/></marker></defs><rect width="100%" height="100%" fill="white"/><style>text{font-family:Arial,sans-serif;fill:#243643} .title{font-size:24px;font-weight:bold} .label{font-size:14px} .node{font-size:16px}</style><text x="30" y="36" class="title">C4 / C2 — целевые контейнеры Медикаменте</text>
+<rect x="370" y="85" width="1530" height="1200" fill="none" stroke="#66737e" stroke-dasharray="7 5"/>
+<text x="382" y="110" text-anchor="start" class="node"><tspan x="382" dy="0">Медикаменте — собственный контур в РФ; показано целевое состояние</tspan></text>
+<rect x="20" y="170" width="260" height="170" rx="8" fill="#edf4fa" stroke="#3f6a87" stroke-width="1.5"/>
+<text x="150" y="227" text-anchor="middle" class="node"><tspan x="150" dy="0">Веб / мобильный ЛК</tspan><tspan x="150" dy="22">[Browser / App]</tspan><tspan x="150" dy="22">Собственная запись,</tspan><tspan x="150" dy="22">карта и договор</tspan></text>
+<rect x="20" y="500" width="260" height="155" rx="8" fill="#edf4fa" stroke="#3f6a87" stroke-width="1.5"/>
+<text x="150" y="560.5" text-anchor="middle" class="node"><tspan x="150" dy="0">Рабочее место</tspan><tspan x="150" dy="22">[Browser]</tspan><tspan x="150" dy="22">Ресепшен / врач</tspan></text>
+<rect x="20" y="990" width="260" height="160" rx="8" fill="#edf4fa" stroke="#3f6a87" stroke-width="1.5"/>
+<text x="150" y="1053" text-anchor="middle" class="node"><tspan x="150" dy="0">BI / ML client</tspan><tspan x="150" dy="22">[Client]</tspan><tspan x="150" dy="22">Только approved dataset</tspan></text>
+<rect x="450" y="260" width="350" height="270" rx="8" fill="#edf4fa" stroke="#3f6a87" stroke-width="1.5"/>
+<text x="625" y="345" text-anchor="middle" class="node"><tspan x="625" dy="0">Операционное приложение</tspan><tspan x="625" dy="22">[Java / API]</tspan><tspan x="625" dy="22">Registry • Scheduling</tspan><tspan x="625" dy="22">Clinical • Billing</tspan><tspan x="625" dy="22">PEP: RBAC + ABAC</tspan><tspan x="625" dy="22">Аудит + outbox</tspan></text>
+<rect x="880" y="150" width="340" height="145" rx="8" fill="#edf4fa" stroke="#3f6a87" stroke-width="1.5"/>
+<text x="1050" y="205.5" text-anchor="middle" class="node"><tspan x="1050" dy="0">IAM [OIDC]</tspan><tspan x="1050" dy="22">MFA, роли, AD federation</tspan><tspan x="1050" dy="22">Короткие сессии</tspan></text>
+<rect x="1450" y="180" width="370" height="170" rx="8" fill="#f3f1e9" stroke="#756842" stroke-width="1.5"/>
+<path d="M1450 195 Q1635 215 1820 195" fill="none" stroke="#756842"/>
+<text x="1635" y="237" text-anchor="middle" class="node"><tspan x="1635" dy="0">PostgreSQL</tspan><tspan x="1635" dy="22">[SQL / OLTP]</tspan><tspan x="1635" dy="22">RLS, доменные схемы,</tspan><tspan x="1635" dy="22">основания / retention</tspan></text>
+<rect x="1450" y="550" width="370" height="155" rx="8" fill="#f3f1e9" stroke="#756842" stroke-width="1.5"/>
+<path d="M1450 565 Q1635 585 1820 565" fill="none" stroke="#756842"/>
+<text x="1635" y="599.5" text-anchor="middle" class="node"><tspan x="1635" dy="0">Архив документов</tspan><tspan x="1635" dy="22">[S3-compatible]</tspan><tspan x="1635" dy="22">KMS, версии, policy,</tspan><tspan x="1635" dy="22">подписанные выдачи</tspan></text>
+<rect x="450" y="790" width="350" height="180" rx="8" fill="#edf4fa" stroke="#3f6a87" stroke-width="1.5"/>
+<text x="625" y="841" text-anchor="middle" class="node"><tspan x="625" dy="0">Адаптеры и задания</tspan><tspan x="625" dy="22">[Java worker]</tspan><tspan x="625" dy="22">1С / лаборатория / оплата</tspan><tspan x="625" dy="22">Outbox, retry, dedup</tspan><tspan x="625" dy="22">Напоминания / retention</tspan></text>
+<rect x="960" y="790" width="320" height="180" rx="8" fill="#edf4fa" stroke="#3f6a87" stroke-width="1.5"/>
+<text x="1120" y="852" text-anchor="middle" class="node"><tspan x="1120" dy="0">Шлюз классификации</tspan><tspan x="1120" dy="22">[NiFi + OCR / NER]</tspan><tspan x="1120" dy="22">Карантин и policy gate</tspan><tspan x="1120" dy="22">Подробно: Task6</tspan></text>
+<rect x="1460" y="1070" width="360" height="160" rx="8" fill="#f3f1e9" stroke="#756842" stroke-width="1.5"/>
+<path d="M1460 1085 Q1640 1105 1820 1085" fill="none" stroke="#756842"/>
+<text x="1640" y="1122" text-anchor="middle" class="node"><tspan x="1640" dy="0">Аналитический слой</tspan><tspan x="1640" dy="22">[ClickHouse / S3]</tspan><tspan x="1640" dy="22">Curated / approved marts</tspan><tspan x="1640" dy="22">Раздельные роли</tspan></text>
+<rect x="930" y="1100" width="350" height="140" rx="8" fill="#edf4fa" stroke="#3f6a87" stroke-width="1.5"/>
+<text x="1105" y="1153" text-anchor="middle" class="node"><tspan x="1105" dy="0">Аудит / наблюдаемость</tspan><tspan x="1105" dy="22">[SIEM / VictoriaMetrics]</tspan><tspan x="1105" dy="22">Без payload и ПДн</tspan></text>
+<rect x="420" y="1310" width="890" height="75" rx="8" fill="#edf4fa" stroke="#3f6a87" stroke-width="1.5"/>
+<text x="865" y="1352.5" text-anchor="middle" class="node"><tspan x="865" dy="0">Внешние системы: 1С / ККМ • лаборатория • платёжный и notification provider</tspan></text>
+<polyline points="280,255 340,255 340,320 450,320" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="314.6" y="200" width="70.8" height="40" fill="white"/><text x="350" y="215" text-anchor="middle" class="label"><tspan x="350" dy="0">HTTPS</tspan><tspan x="350" dy="18">own data</tspan></text>
+<polyline points="280,575 340,575 340,480 450,480" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="291.8" y="600" width="116.39999999999999" height="40" fill="white"/><text x="350" y="615" text-anchor="middle" class="label"><tspan x="350" dy="0">HTTPS</tspan><tspan x="350" dy="18">role + purpose</tspan></text>
+<polyline points="800,310 835,310 835,250 880,250" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="814.8" y="200" width="40.4" height="22" fill="white"/><text x="835" y="215" text-anchor="middle" class="label"><tspan x="835" dy="0">OIDC</tspan></text>
+<polyline points="800,420 1360,420 1360,300 1450,300" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="1007.6" y="378" width="184.79999999999998" height="40" fill="white"/><text x="1100" y="393" text-anchor="middle" class="label"><tspan x="1100" dy="0">SQL / TLS</tspan><tspan x="1100" dy="18">Авторизация, транзакции</tspan></text>
+<polyline points="800,495 1360,495 1360,625 1450,625" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="1026.6" y="533" width="146.79999999999998" height="40" fill="white"/><text x="1100" y="548" text-anchor="middle" class="label"><tspan x="1100" dy="0">S3 / TLS</tspan><tspan x="1100" dy="18">Шифрование и audit</tspan></text>
+<polyline points="1600,350 1870,350 1870,750 850,750 850,840 800,840" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="1085.6" y="720" width="108.8" height="22" fill="white"/><text x="1140" y="735" text-anchor="middle" class="label"><tspan x="1140" dy="0">Outbox / jobs</tspan></text>
+<polyline points="500,970 500,1240 600,1240 600,1310" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="556.6" y="1175" width="146.79999999999998" height="40" fill="white"/><text x="630" y="1190" text-anchor="middle" class="label"><tspan x="630" dy="0">TLS / mTLS</tspan><tspan x="630" dy="18">Scopes / allowlist</tspan></text>
+<polyline points="1670,350 1670,470 1400,470 1400,730 1200,730 1200,790" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="1479.2" y="430" width="131.6" height="40" fill="white"/><text x="1545" y="445" text-anchor="middle" class="label"><tspan x="1545" dy="0">Разрешённая</tspan><tspan x="1545" dy="18">выгрузка / batch</tspan></text>
+<polyline points="1280,920 1640,920 1640,1070" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="1432.8" y="885" width="154.4" height="40" fill="white"/><text x="1510" y="900" text-anchor="middle" class="label"><tspan x="1510" dy="0">Только после policy</tspan><tspan x="1510" dy="18">Теги / lineage</tspan></text>
+<polyline points="200,1150 200,1270 1380,1270 1380,1200 1460,1200" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="625.4" y="1235" width="329.2" height="22" fill="white"/><text x="790" y="1250" text-anchor="middle" class="label"><tspan x="790" dy="0">Query gateway / роли; без raw и quarantine</tspan></text>
+<polyline points="680,530 680,670 900,670 900,1060 1000,1060 1000,1100" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="918" y="637" width="124" height="22" fill="white"/><text x="980" y="652" text-anchor="middle" class="label"><tspan x="980" dy="0">Аудит / метрики</tspan></text>
+<polyline points="1120,970 1120,1100" fill="none" stroke="#56646f" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="1150.4" y="1015" width="139.2" height="22" fill="white"/><text x="1220" y="1030" text-anchor="middle" class="label"><tspan x="1220" dy="0">Качество / ошибки</tspan></text>
+<text x="30" y="1450" class="label">MVP: ЛК, API Registry/Scheduling, IAM, БД, закрытый архив, ручные задачи напоминаний. Остальные модули вводятся по этапам.</text>
+</svg>
